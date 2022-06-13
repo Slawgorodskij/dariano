@@ -1,0 +1,104 @@
+.table {
+  border-collapse: collapse;
+
+  &__string {
+    background-color: var(--color-light-pink);
+    transition: background-color 0.4s linear;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-table-dividers);
+    }
+
+    &_color {
+      background-color: var(--color-white);
+    }
+  }
+
+  &__cell {
+    padding: 13px 10px;
+    text-align: left;
+    font-size: 14px;
+    color: var(--color-dark-text);
+
+
+    @include desktop {
+      padding: 13px 5px;
+    }
+
+    &_checkbox {
+      padding-left: 30px;
+      padding-right: 2px;
+    }
+
+    &_title {
+      padding: 18px 20px 18px 10px;
+      font-family: var(--font-spectral);
+      font-weight: 600;
+      font-size: 16px;
+
+      &_nowrap {
+        white-space: nowrap;
+      }
+
+      @include desktop {
+        padding-left: 5px;
+      }
+
+      &_first {
+        padding-left: 60px;
+
+        @include desktop {
+          padding-left: 25px;
+        }
+      }
+    }
+
+    &_order {
+      padding: 25px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_name {
+      min-width: 371px;
+
+      @include tablet {
+        min-width: 210px;
+      }
+    }
+
+    &_nowrap {
+      white-space: nowrap;
+    }
+
+    &_br-white {
+      border-right: 1px solid var(--color-white);
+      cursor: auto;
+      pointer-events: none;
+    }
+
+    &_first {
+      padding-left: 60px;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.checkbox-fake_mr-15 {
+  margin-right: 15px;
+}
+
+@media (max-width: 1300px) {
+  .table__cell_article {
+    min-width: 65px;
+    word-break: break-word;
+  }
+  .table__cell_name {
+    min-width: 300px;
+  }
+}

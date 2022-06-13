@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nomenclature": "Дверь",
+    "opening": "Зал",
+    "article": "00001002024495",
+    "name": "Турин-XL, эмаль крем, ДГ, филенка без рисунка/нет филенки, стекло выбеленное, 2000х900, нет, левая",
+    "quantity": "1",
+    "price": "15 140 ₽",
+    "discount": "30%",
+    "amount": "10 590 ₽",
+    "purchasePrice": "13 626 ₽",
+    "status": "Упаковка"
+  },
+  {
+    "id": 2,
+    "nomenclature": "Коробка",
+    "opening": "Зал",
+    "article": "00001002024495",
+    "name": "Коробка Space, эмаль крем, длиномер, НН-3, левая",
+    "quantity": "50",
+    "price": "300 ₽",
+    "discount": "30%",
+    "amount": "200 ₽",
+    "purchasePrice": "270 ₽",
+    "status": "Упаковка"
+  },
+
+  {
+    "id": 3,
+    "nomenclature": "Коробка",
+    "opening": "Зал",
+    "article": "00001002024495",
+    "name": "Коробка Space, эмаль крем, длиномер, НН-3, левая",
+    "quantity": "50",
+    "price": "300 ₽",
+    "discount": "30%",
+    "amount": "200 ₽",
+    "purchasePrice": "270 ₽",
+    "status": "Сдано на склад"
+  },
+  {
+    "id": 4,
+    "nomenclature": "Коробка",
+    "opening": "Зал",
+    "article": "00001002024495",
+    "name": "Коробка Space, эмаль крем, длиномер, НН-3, левая",
+    "quantity": "50",
+    "price": "300 ₽",
+    "discount": "30%",
+    "amount": "200 ₽",
+    "purchasePrice": "270 ₽",
+    "status": "Упаковка"
+  }
+
+]

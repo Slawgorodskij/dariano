@@ -1,0 +1,122 @@
+.modal {
+  &_inactive {
+    display: none;
+  }
+
+  &_opacity {
+    animation: addOpacity 1s forwards;
+  }
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_opacity {
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 250px;
+    background-color: var(--color-dark-blue);
+    overflow: auto;
+    animation: modal 1s forwards;
+
+    &-action {
+      justify-content: flex-start;
+      align-items: flex-start;
+      position: relative;
+      padding: 40px 50px 130px 80px;
+      width: 1029px;
+      height: 850px;
+      background-color: var(--color-white);
+
+      @include desktop{
+        padding: 50px 50px 120px;
+        width: 1000px;
+        height: 850px;
+      }
+
+      @include tablet{
+        padding: 30px 30px 50px;
+        width: 860px;
+        height: 760px;
+      }
+      @include mobile{
+        padding: 20px 20px 50px;
+        width: 600px;
+        height: 870px;
+      }
+      @include mini-mobile{
+        padding: 20px 10px 65px;
+        width: 300px;
+        height: 1357px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 48px;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+
+    fill: var(--color-dark-text);
+  }
+
+  &__text {
+    color: var(--color-white-text);
+  }
+
+  &__btn {
+
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-white-text);
+
+    transition: all 0.4s linear;
+
+    &_delete {
+      margin-right: 40px;
+      background-color: var(--color-pink-main);
+      border: none;
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-pink-main);
+      }
+    }
+
+    &_remove {
+      background-color: transparent;
+      border: 1px solid var(--color-white);
+
+      &:hover {
+        background-color: var(--color-pink-main);
+        border: none;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,160 @@
+.block-filters {
+  padding: 50px 30px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+
+  @include desktop {
+    padding: 40px 20px 30px;
+  }
+
+  @include mobile {
+    padding: 50px 20px;
+  }
+
+  @include mini-mobile {
+    padding: 40px 10px 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+
+    &_right {
+      margin-left: auto;
+
+      @include mini-mobile {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+
+    @include mini-mobile {
+      flex-wrap: wrap;
+      row-gap: 30px;
+    }
+  }
+
+  &__date {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @include mini-mobile {
+      margin-right: 0;
+    }
+  }
+
+  &__count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 40px;
+
+    font-family: var(--font-formular);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-dark-text);
+
+    border: 1px solid var(--color-light-grey);
+
+    cursor: pointer;
+
+    &:hover,
+    &_active {
+      border: 1px solid var(--color-pink-main);
+    }
+
+    @include mini-mobile {
+      flex: 1 1 33.333%;
+    }
+  }
+}
+
+.table {
+  &-my-order {
+    @include mobile {
+      display: none;
+    }
+
+
+  }
+
+  &__cell {
+    &_border {
+      border-right: 1px solid var(--color-table-dividers);
+    }
+  }
+}
+
+.table-mobile-my-order {
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.order-buttons {
+  margin-bottom: 120px;
+  padding-top: 40px;
+
+  @include mobile {
+    padding: 20px;
+  }
+  @include mini-mobile {
+    padding: 30px 10px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 20px;
+    }
+  }
+
+  &__show {
+    margin-bottom: 40px;
+    color: var(--color-dark-text);
+  }
+
+  &__button {
+
+    &_color {
+      background-color: var(--color-dark-blue);
+      color: var(--color-white-text);
+    }
+
+    &_mr-25 {
+      margin-right: 25px;
+    }
+
+    &_mr-20 {
+      margin-right: 20px;
+    }
+
+    &_w-260 {
+      width: 260px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+
+}
+
+@media (max-width: 870px) {
+  .block-filters__item_w-100 {
+    width: 100%;
+  }
+}

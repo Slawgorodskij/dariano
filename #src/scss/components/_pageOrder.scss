@@ -1,0 +1,147 @@
+.order-title {
+  padding: 50px 30px 39px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include desktop {
+    padding: 30px 20px;
+  }
+
+  @include tablet {
+    padding: 30px 20px 29px;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--color-dark-text);
+  }
+}
+
+.checkbox-fake {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: var(--color-white);
+
+  border: 1px solid var(--color-table-dividers);
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:checked ~ .checkbox-fake {
+  background-color: var(--color-dark-blue);
+}
+
+.order-cost {
+  margin-left: auto;
+  padding: 20px 30px;
+  width: 270px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__text_weight {
+    font-weight: 700;
+  }
+}
+
+.table-mobile-order {
+  &__row::after {
+    content: "";
+    position: absolute;
+    top: 99%;
+    right: 20px;
+    left: 20px;
+    height: 1px;
+    background-color: var(--color-table-dividers);
+
+    @include mini-mobile {
+      right: 10px;
+      left: 10px;
+    }
+  }
+
+  &__cell {
+    &_title {
+      &_font {
+        padding: 10px 0;
+        width: 77px;
+
+        font-family: var(--font-formular);
+        font-size: 14px;
+        color: var(--color-grey-text);
+        border-right: 1px solid var(--color-table-dividers);
+
+        @include mini-mobile {
+          padding: 0;
+          border-right: none;
+        }
+      }
+    }
+
+    &_text {
+      border-left: 1px solid var(--color-table-dividers);
+    }
+  }
+}
+
+.order__buttons {
+  padding: 50px 30px 112px;
+  display: flex;
+  justify-content: space-between;
+  @include desktop {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .table-order {
+    display: none;
+  }
+  .table-mobile-order {
+    display: block;
+  }
+  .order-cost {
+    width: 100%;
+  }
+  .order-buttons__item_column {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .order__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .table-mobile-order-status__cell_text {
+    padding: 10px 10px 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-title {
+    padding: 10px 10px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+  .button-stock {
+    width: 100%;
+  }
+}

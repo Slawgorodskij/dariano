@@ -1,0 +1,61 @@
+<div class="order-title">
+    <h1 class="order-title__text">Заказ №001</h1>
+</div>
+
+@@include('form.html')
+
+<table class="table order-block__table table-order-status">
+    <tr class="table__string table-order-status__string">
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell_title_first table__cell__nomenclature">
+            Номенклатура
+        </th>
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell__opening">Проем
+        </th>
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell_title_nowrap">
+            Артикул
+        </th>
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell_name">
+            Наименование
+        </th>
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell__quantity">
+            Кол - во
+        </th>
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell__price">Цена</th>
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell__discount">Скидка
+        </th>
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell__amount">Сумма</th>
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell__purchase-price">
+            Цена закупки
+        </th>
+        <th class="table__cell table__cell_border table__cell_br-white table__cell_title table__cell__status">Статус
+        </th>
+    </tr>
+</table>
+
+<div class="table table-mobile table-mobile-order-status"></div>
+
+<div class="order-cost order-status-cost">
+    <div class="order-cost__item">
+        <p>итого</p>
+        <p class="order-cost__text_weight">21 098 ₽</p>
+    </div>
+    <div class="order-cost__item">
+        <p>итого закупки</p>
+        <p class="order-cost__text_weight">21 098 ₽</p>
+    </div>
+</div>
+
+<div class="order__buttons">
+    <div class="order-buttons__item order-buttons__item_status">
+        <button class="button order-status__button order-buttons__button_mr-20">Печать</button>
+        <div class="button-fake button-fake_w-260 order-buttons__button_mr-20">Отправить на фабрику</div>
+        <div class="button-fake order-buttons__button_mr-20">Добавить</div>
+        <div class="button-fake order-buttons__button_mr-20">Удалить</div>
+        <div class="button-fake ">Изменить</div>
+    </div>
+    <div class="order-buttons__item">
+        <button class="button order-status__button order-buttons__button_color button-quit">Сохранить и закрыть</button>
+
+    </div>
+
+</div>

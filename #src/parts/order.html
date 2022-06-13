@@ -1,0 +1,56 @@
+<div class="order-title">
+    <h1 class="order-title__text">Заказ №001</h1>
+    <button class="button order-buttons__button_color button-stock">Акции</button>
+</div>
+
+@@include('form.html')
+
+<table class="table order-block__table table-order">
+    <tr class="table__string">
+        <th></th>
+        <th class="table__cell table__cell_border table__cell_title  cell__nomenclature">
+            Номенклатура
+        </th>
+        <th class="table__cell table__cell_border table__cell_title ">Проем</th>
+        <th class="table__cell table__cell_border table__cell_title table__cell_title_nowrap">Артикул</th>
+        <th class="table__cell table__cell_border table__cell_title ">Наименование</th>
+        <th class="table__cell table__cell_border table__cell_title ">Кол - во</th>
+        <th class="table__cell table__cell_border table__cell_title ">Цена</th>
+        <th class="table__cell table__cell_border table__cell_title ">Скидка</th>
+        <th class="table__cell table__cell_border table__cell_title ">Сумма</th>
+        <th class="table__cell table__cell_border table__cell_title ">Цена закупки</th>
+    </tr>
+</table>
+
+<div class="table-mobile table-mobile-order"></div>
+
+<div class="order-cost">
+    <div class="order-cost__item">
+        <p>итого</p>
+        <p class="order-cost__text_weight">21 098 ₽</p>
+    </div>
+    <div class="order-cost__item">
+        <p>итого закупки</p>
+        <p class="order-cost__text_weight">21 098 ₽</p>
+    </div>
+</div>
+
+<div class="order__buttons">
+    <div class="order-buttons__item order-buttons__item_column">
+        <button class="button order__button order-buttons__button_mr-20">Печать</button>
+        <button class="button order__button order-buttons__button_w-260 order-buttons__button_mr-20">Отправить на
+            фабрику
+        </button>
+        <button class="button order__button order-buttons__button_mr-20">Добавить</button>
+        <button class="button order__button order-buttons__button_mr-20 button-delete">Удалить</button>
+        <button class="button order__button ">Изменить</button>
+    </div>
+    <div class="order-buttons__item">
+        <button class="button order__button order-buttons__button_color button-quit">Сохранить и закрыть</button>
+    </div>
+</div>
+
+
+<!--table__cell_title_first-->
+
+

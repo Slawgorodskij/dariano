@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('parts/head.html')
+<body>
+<header class="header">
+    <div class="header__item header__item_left">
+        <img class="header__logo" src="images/logo.png" alt="logo">
+        <p class="header__title">Панель дилера</p>
+    </div>
+
+    <div class="header__item">
+        <button class="button-none header__button-none header__elem_mr-50 ">
+            <svg class="header__button-icon" width="36" height="8" viewBox="0 0 36 8" fill="white">
+                <path d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659726 4.53553 0.464463C4.34027 0.269201 4.02369 0.269201 3.82843 0.464463L0.646446 3.64644ZM36 3.5L1 3.5L1 4.5L36 4.5L36 3.5Z"
+                      fill="white"/>
+            </svg>
+            <span>Назад</span>
+        </button>
+        <button class="button button-exit header__button">
+            Выйти
+        </button>
+    </div>
+
+    <div class="header__item_mobile header__item_mobile_right">
+        <button class="button-none header__button-none header__button-none_right">
+            <svg class="header__button-icon" width="36" height="8" viewBox="0 0 36 8" fill="white">
+                <path d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659726 4.53553 0.464463C4.34027 0.269201 4.02369 0.269201 3.82843 0.464463L0.646446 3.64644ZM36 3.5L1 3.5L1 4.5L36 4.5L36 3.5Z"
+                      fill="white"/>
+            </svg>
+            <span>Назад</span>
+        </button>
+    </div>
+
+</header>
+
+<main class="personal-data">
+
+    <h1 class="personal-data__title">Личные данные</h1>
+
+    <form class="personal-data__form personal-data-form" action="#">
+        <div class="personal-data-form__item">
+
+            <div class="block-forms__border block-forms__border_status">
+                <p class="block-forms__name-elem">Название магазина</p>
+                <input class="block-forms__elem personal-data-form__input" type="text" name="store_name"
+                       placeholder="Название магазина">
+                <svg class="personal-data-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14 0H6C2.691 0 0 2.691 0 6V19C0 19.2652 0.105357 19.5196 0.292893 19.7071C0.48043 19.8946 0.734784 20 1 20H14C17.309 20 20 17.309 20 14V6C20 2.691 17.309 0 14 0ZM18 14C18 16.206 16.206 18 14 18H2V6C2 3.794 3.794 2 6 2H14C16.206 2 18 3.794 18 6V14Z"
+                          fill="#DCCDCB"/>
+                    <path d="M5 12.987V14.986H6.999L12.528 9.464L10.53 7.466L5 12.987ZM13.47 8.522L11.472 6.522L12.995 5L14.995 6.999L13.47 8.522Z"
+                          fill="#DCCDCB"/>
+                </svg>
+            </div>
+
+            <div class="block-forms__border block-forms__border_status">
+                <p class="block-forms__name-elem">Адрес салона</p>
+                <input class="block-forms__elem" type="text" name="address_store" placeholder="Адрес салона">
+                <svg class="personal-data-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14 0H6C2.691 0 0 2.691 0 6V19C0 19.2652 0.105357 19.5196 0.292893 19.7071C0.48043 19.8946 0.734784 20 1 20H14C17.309 20 20 17.309 20 14V6C20 2.691 17.309 0 14 0ZM18 14C18 16.206 16.206 18 14 18H2V6C2 3.794 3.794 2 6 2H14C16.206 2 18 3.794 18 6V14Z"
+                          fill="#DCCDCB"/>
+                    <path d="M5 12.987V14.986H6.999L12.528 9.464L10.53 7.466L5 12.987ZM13.47 8.522L11.472 6.522L12.995 5L14.995 6.999L13.47 8.522Z"
+                          fill="#DCCDCB"/>
+                </svg>
+            </div>
+            <div class="block-forms__border block-forms__border_phone">
+                <p class="block-forms__name-elem">Номер телефона</p>
+                <input class="block-forms__elem" type="number" name="phone" placeholder="8 (977) 454-45-76">
+                <svg class="personal-data-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14 0H6C2.691 0 0 2.691 0 6V19C0 19.2652 0.105357 19.5196 0.292893 19.7071C0.48043 19.8946 0.734784 20 1 20H14C17.309 20 20 17.309 20 14V6C20 2.691 17.309 0 14 0ZM18 14C18 16.206 16.206 18 14 18H2V6C2 3.794 3.794 2 6 2H14C16.206 2 18 3.794 18 6V14Z"
+                          fill="#DCCDCB"/>
+                    <path d="M5 12.987V14.986H6.999L12.528 9.464L10.53 7.466L5 12.987ZM13.47 8.522L11.472 6.522L12.995 5L14.995 6.999L13.47 8.522Z"
+                          fill="#DCCDCB"/>
+                </svg>
+            </div>
+            <div class="block-forms__border block-forms__border_status">
+                <p class="block-forms__name-elem">E-mail</p>
+                <input class="block-forms__elem" type="email" name="email" placeholder="E-mail">
+                <svg class="personal-data-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14 0H6C2.691 0 0 2.691 0 6V19C0 19.2652 0.105357 19.5196 0.292893 19.7071C0.48043 19.8946 0.734784 20 1 20H14C17.309 20 20 17.309 20 14V6C20 2.691 17.309 0 14 0ZM18 14C18 16.206 16.206 18 14 18H2V6C2 3.794 3.794 2 6 2H14C16.206 2 18 3.794 18 6V14Z"
+                          fill="#DCCDCB"/>
+                    <path d="M5 12.987V14.986H6.999L12.528 9.464L10.53 7.466L5 12.987ZM13.47 8.522L11.472 6.522L12.995 5L14.995 6.999L13.47 8.522Z"
+                          fill="#DCCDCB"/>
+                </svg>
+            </div>
+            <div class="block-forms__border block-forms__border_status">
+                <p class="block-forms__name-elem">Ответственный ФИО</p>
+                <input class="block-forms__elem" type="text" name="client" placeholder="Ответственный ФИО ">
+                <svg class="personal-data-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14 0H6C2.691 0 0 2.691 0 6V19C0 19.2652 0.105357 19.5196 0.292893 19.7071C0.48043 19.8946 0.734784 20 1 20H14C17.309 20 20 17.309 20 14V6C20 2.691 17.309 0 14 0ZM18 14C18 16.206 16.206 18 14 18H2V6C2 3.794 3.794 2 6 2H14C16.206 2 18 3.794 18 6V14Z"
+                          fill="#DCCDCB"/>
+                    <path d="M5 12.987V14.986H6.999L12.528 9.464L10.53 7.466L5 12.987ZM13.47 8.522L11.472 6.522L12.995 5L14.995 6.999L13.47 8.522Z"
+                          fill="#DCCDCB"/>
+                </svg>
+            </div>
+        </div>
+        <div class="personal-data-form__item">
+            <div class="block-forms__border block-forms__border_status">
+                <p class="block-forms__name-elem">Адрес</p>
+                <input class="block-forms__elem" type="text" name="address" placeholder="Адрес">
+                <svg class="personal-data-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14 0H6C2.691 0 0 2.691 0 6V19C0 19.2652 0.105357 19.5196 0.292893 19.7071C0.48043 19.8946 0.734784 20 1 20H14C17.309 20 20 17.309 20 14V6C20 2.691 17.309 0 14 0ZM18 14C18 16.206 16.206 18 14 18H2V6C2 3.794 3.794 2 6 2H14C16.206 2 18 3.794 18 6V14Z"
+                          fill="#DCCDCB"/>
+                    <path d="M5 12.987V14.986H6.999L12.528 9.464L10.53 7.466L5 12.987ZM13.47 8.522L11.472 6.522L12.995 5L14.995 6.999L13.47 8.522Z"
+                          fill="#DCCDCB"/>
+                </svg>
+            </div>
+            <div class="block-forms__border block-forms__border_status">
+                <p class="block-forms__name-elem">Логин</p>
+                <input class="block-forms__elem" type="text" name="login" placeholder="Логин">
+                <svg class="personal-data-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14 0H6C2.691 0 0 2.691 0 6V19C0 19.2652 0.105357 19.5196 0.292893 19.7071C0.48043 19.8946 0.734784 20 1 20H14C17.309 20 20 17.309 20 14V6C20 2.691 17.309 0 14 0ZM18 14C18 16.206 16.206 18 14 18H2V6C2 3.794 3.794 2 6 2H14C16.206 2 18 3.794 18 6V14Z"
+                          fill="#DCCDCB"/>
+                    <path d="M5 12.987V14.986H6.999L12.528 9.464L10.53 7.466L5 12.987ZM13.47 8.522L11.472 6.522L12.995 5L14.995 6.999L13.47 8.522Z"
+                          fill="#DCCDCB"/>
+                </svg>
+            </div>
+            <div class="block-forms__border block-forms__border_status">
+                <p class="block-forms__name-elem">Новый пароль</p>
+                <input class="block-forms__elem" type="password" name="new_password" placeholder="Новый пароль">
+                <svg class="personal-data-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14 0H6C2.691 0 0 2.691 0 6V19C0 19.2652 0.105357 19.5196 0.292893 19.7071C0.48043 19.8946 0.734784 20 1 20H14C17.309 20 20 17.309 20 14V6C20 2.691 17.309 0 14 0ZM18 14C18 16.206 16.206 18 14 18H2V6C2 3.794 3.794 2 6 2H14C16.206 2 18 3.794 18 6V14Z"
+                          fill="#DCCDCB"/>
+                    <path d="M5 12.987V14.986H6.999L12.528 9.464L10.53 7.466L5 12.987ZM13.47 8.522L11.472 6.522L12.995 5L14.995 6.999L13.47 8.522Z"
+                          fill="#DCCDCB"/>
+                </svg>
+            </div>
+            <div class="block-forms__border block-forms__border_status">
+                <p class="block-forms__name-elem">Подтверждение нового пароля</p>
+                <input class="block-forms__elem" type="password" name="confirmation_password"
+                       placeholder="Подтверждение нового пароля">
+                <svg class="personal-data-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14 0H6C2.691 0 0 2.691 0 6V19C0 19.2652 0.105357 19.5196 0.292893 19.7071C0.48043 19.8946 0.734784 20 1 20H14C17.309 20 20 17.309 20 14V6C20 2.691 17.309 0 14 0ZM18 14C18 16.206 16.206 18 14 18H2V6C2 3.794 3.794 2 6 2H14C16.206 2 18 3.794 18 6V14Z"
+                          fill="#DCCDCB"/>
+                    <path d="M5 12.987V14.986H6.999L12.528 9.464L10.53 7.466L5 12.987ZM13.47 8.522L11.472 6.522L12.995 5L14.995 6.999L13.47 8.522Z"
+                          fill="#DCCDCB"/>
+                </svg>
+            </div>
+            <button class="button personal-data-form__button">
+                Сохранить изменения
+            </button>
+        </div>
+    </form>
+</main>
+</body>
+</html>

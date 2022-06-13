@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('parts/head.html')
+<body>
+
+<main class="login">
+
+        <img class="login__images" src="images/logo.png" alt="logo">
+
+            <div class="login__block login-block">
+                <div class="login-block__title">
+                    <p class="login-block__title_text">Введите логин и пароль для авторизации</p>
+                </div>
+                <form class="login-block__form login-form" action="#">
+                    <input class="login-form__input login-form__input_mb-23" type="text" name="login" placeholder="Логин*" required>
+                    <input class="login-form__input login-form__input_mb-50" type="password" name="password" placeholder="Пароль*" required>
+                    <div class="login-form__error login-form__error_inactive">
+                        <img class="login-form__images" src="images/component_error.png" alt="error">
+                        <p class="login-form__text">Логин или пароль введен неправильно, попробуйте ещё раз </p>
+                    </div>
+                    <div class="login-form__buttons">
+                        <button type="submit" class="button login-form__button">
+                            Войти
+                        </button>
+                        <button type="submit" class="button-none">
+                            Восстановить пароль
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+</main>
+
+</body>
+</html>

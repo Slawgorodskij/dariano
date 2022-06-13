@@ -1,0 +1,60 @@
+<div class="myOrder-block__filters block-filters">
+
+    <div class="block-filters__item block-filters__item_w-100">
+
+        <div class="block-filters__date">
+            <div class="block-forms__border block-forms__border_date">
+                <p class="block-forms__name-elem">Дата</p>
+                <input class="block-forms__elem" type="text" name="date" placeholder="25.05.2022">
+            </div>
+            <span>-</span>
+            <div class="block-forms__border  block-forms__border_date">
+                <p class="block-forms__name-elem">Дата</p>
+                <input class="block-forms__elem" type="text" name="date" placeholder="25.05.2022">
+            </div>
+        </div>
+
+        <div class="block-forms__border block-forms__border_status block-forms__border_active">
+            <p class="block-forms__name-elem">Статус</p>
+            <input class="block-forms__elem" type="text" name="status" placeholder="Статус">
+        </div>
+
+    </div>
+
+    <div class="block-filters__item block-filters__item_right">
+        <div class="block-filters__count block-filters__count_active" data-count="30"><p>30 шт.</p></div>
+        <div class="block-filters__count " data-count="50"><span>50 шт.</span></div>
+        <div class="block-filters__count" data-count="100"><span>100 шт.</span></div>
+    </div>
+</div>
+
+<table class="table order-block__table table-my-order">
+    <tr class="table__string">
+        <th class="table__cell table__cell_title table__cell_title_first">№</th>
+        <th class="table__cell table__cell_title cell__status">Статус</th>
+        <th class="table__cell table__cell_title cell__client">ФИО клиента</th>
+        <th class="table__cell table__cell_title cell__phone">Телефон</th>
+        <th class="table__cell table__cell_title cell__address">Адрес</th>
+        <th class="table__cell table__cell_title cell__order">Сумма заказа</th>
+        <th class="table__cell table__cell_title cell__date">Дата</th>
+        <th class="table__cell table__cell_title cell__note">Примечание</th>
+        <th class="table__cell table__cell_title cell__reserve"></th>
+    </tr>
+</table>
+
+<div class="table-mobile table-mobile-my-order"></div>
+
+<div class="myOrder-block__buttons order-buttons">
+    <div class="order-buttons__item">
+        <button class="button-none order-buttons__button order-buttons__show">
+            Показать ещё
+        </button>
+    </div>
+    <div class="order-buttons__item">
+        <button class="button order-buttons__button order-buttons__button_mr-25 order-buttons__button_color">Добавить
+        </button>
+        <button class="button order-buttons__button order-buttons__button_mr-25">Удалить</button>
+        <button class="button order-buttons__button ">Изменить</button>
+    </div>
+
+</div>
