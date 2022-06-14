@@ -71,7 +71,47 @@ input[type="checkbox"]:checked ~ .checkbox-fake {
     }
   }
 
+  &__befor {
+    &::before {
+      @include mini-mobile {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        left: 10px;
+        height: 1px;
+        background-color: var(--color-table-dividers);
+      }
+
+    }
+  }
+
   &__cell {
+    &_size {
+
+      padding: 10px 0;
+      display: flex;
+      width: 120px;
+      border-right: 1px solid var(--color-table-dividers);
+
+      @include mini-mobile {
+        margin-bottom: 11px;
+        padding: 0;
+        border-right: none;
+      }
+    }
+
+    &_alter {
+      display: flex;
+
+      @include mini-mobile {
+        padding-top: 11px;
+        position: relative;
+
+      }
+
+    }
+
     &_title {
       &_font {
         padding: 10px 0;
@@ -91,6 +131,13 @@ input[type="checkbox"]:checked ~ .checkbox-fake {
 
     &_text {
       border-left: 1px solid var(--color-table-dividers);
+    }
+  }
+
+  &__icon {
+    margin: 0 5px 0 20px;
+    @include mini-mobile {
+      margin-left: 0;
     }
   }
 }

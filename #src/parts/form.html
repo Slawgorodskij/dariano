@@ -5,9 +5,22 @@
         <input class="block-forms__elem" type="text" name="date" placeholder="25.05.2022">
     </div>
 
-    <div class="block-forms__border block-forms__border_status">
-        <p class="block-forms__name-elem">Статус</p>
-        <input class="block-forms__elem" type="text" name="status" placeholder="Статус">
+    <div class="select block-forms__select">
+        <p class="select__name">Статус</p>
+        <div class="select__header">
+            <span class="select__current">Статус</span>
+            <svg class="select__icon" width="13" height="7" viewBox="0 0 13 7" fill="none">
+                <path d="M12 1L6.5 6L1 1" stroke="#2A3251" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="select__body">
+            <div class="select__item">Первичный просчет</div>
+            <div class="select__item">Замер</div>
+            <div class="select__item">Финальный расчет</div>
+            <div class="select__item">Отправлен на фабрику</div>
+            <div class="select__item">Завершенный</div>
+            <div class="select__item">Отказ</div>
+        </div>
     </div>
 
     <div class="block-forms__border block-forms__border_phone">

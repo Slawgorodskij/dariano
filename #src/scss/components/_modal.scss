@@ -43,27 +43,31 @@
       height: 850px;
       background-color: var(--color-white);
 
-      @include desktop{
+      @include desktop {
         padding: 50px 50px 120px;
         width: 1000px;
         height: 850px;
       }
 
-      @include tablet{
+      @include tablet {
         padding: 30px 30px 50px;
         width: 860px;
         height: 760px;
       }
-      @include mobile{
+      @include mobile {
         padding: 20px 20px 50px;
         width: 600px;
         height: 870px;
       }
-      @include mini-mobile{
+      @include mini-mobile {
         padding: 20px 10px 65px;
         width: 300px;
         height: 1357px;
       }
+    }
+
+    &_center {
+      justify-content: center;
     }
   }
 
@@ -97,8 +101,8 @@
 
     transition: all 0.4s linear;
 
-    &_delete {
-      margin-right: 40px;
+    &_delete,
+    &_save {
       background-color: var(--color-pink-main);
       border: none;
 
@@ -106,6 +110,19 @@
         background-color: var(--color-white);
         color: var(--color-pink-main);
       }
+    }
+
+    &_delete {
+      margin-right: 40px;
+    }
+
+    &_save {
+      margin-bottom: 30px;
+    }
+
+    &_w-270 {
+      width: 270px;
+      height: 50px;
     }
 
     &_remove {
@@ -120,3 +137,4 @@
   }
 
 }
+

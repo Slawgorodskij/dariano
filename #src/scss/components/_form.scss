@@ -17,6 +17,10 @@ textarea::placeholder {
     padding: 0 20px;
   }
 
+  &__select {
+    width: 240px;
+  }
+
   &__border {
     position: relative;
     padding: 10px;
@@ -80,6 +84,9 @@ textarea::placeholder {
 }
 
 @media (max-width: 920px) {
+  .block-forms__select {
+    width: 49%;
+  }
   .block-forms__border {
     flex-basis: 45%;
   }

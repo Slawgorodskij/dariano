@@ -22,12 +22,23 @@ if (document.querySelector('.button-delete')) {
     buttonOperation(buttonDelete, modalDelete);
 }
 
+if (document.querySelector('.button-clear')) {
+    const modalDelete = document.querySelector('.modal-clear');
+    const buttonDelete = document.querySelector('.button-clear')
+    buttonOperation(buttonDelete, modalDelete);
+}
+
 if (document.querySelector('.button-exit')) {
     const modalExit = document.querySelector('.modal-exit');
     const buttonExit = document.querySelector('.button-exit')
     buttonOperation(buttonExit, modalExit);
 }
 
+if (document.querySelector('.button-save')) {
+    const modalExit = document.querySelector('.modal-save');
+    const buttonExit = document.querySelector('.button-save')
+    buttonOperation(buttonExit, modalExit);
+}
 
 if (document.querySelector('.button-quit')) {
     const modalQuit = document.querySelector('.modal-quit');

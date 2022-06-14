@@ -61,6 +61,20 @@
       justify-content: center;
     }
 
+    &_client {
+      min-width: 200px;
+      @include tablet {
+        min-width: 120px;
+      }
+    }
+
+    &_address {
+
+      @include desktop {
+        min-width: 150px;
+      }
+    }
+
     &_name {
       min-width: 371px;
 

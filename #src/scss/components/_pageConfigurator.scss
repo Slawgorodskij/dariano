@@ -1,0 +1,200 @@
+.configurator {
+  display: grid;
+  grid-template-columns: minmax(253px, 400px) minmax(655px, 750px);
+
+  @include mobile {
+    grid-template-columns: auto;
+  }
+}
+
+.navigation {
+  background-color: var(--color-dark-blue);
+
+  &__logo {
+    padding: 10px 0 50px 30px;
+
+    @include mobile {
+      padding: 12px 0 20px 20px;
+    }
+  }
+
+  &__images {
+    width: 175px;
+    height: 57px;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #7F8497;
+  }
+
+  &__link {
+    padding: 16px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-white-text);
+    border-bottom: 1px solid #7F8497;
+
+    &:hover {
+      background-color: var(--color-pink-main);
+    }
+
+    &_active {
+      position: relative;
+      background-color: var(--color-pink-main);
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: -1px;
+        width: 36px;
+        height: 100%;
+        background-image: url("../images/subtract.png");
+        background-position: center;
+
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__buttons-block {
+    padding: 0 30px 35px;
+  }
+
+  &__button {
+    width: 100%;
+    background-color: var(--color-pink-main);
+    color: var(--color-white-text);
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-pink-main);
+    }
+  }
+}
+
+.main {
+  padding: 50px;
+
+  @include desktop {
+    padding: 30px 50px;
+  }
+
+  @include tablet {
+    padding: 30px 20px;
+  }
+
+  @include mobile {
+    padding: 40px 20px 27px;
+  }
+
+  &__name {
+    margin: 0 0 5px;
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 48px;
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-family: var(--font-spectral);
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+}
+
+.form-configuration {
+  margin-bottom: 30px;
+  padding-top: 30px;
+  display: grid;
+  grid-template-areas: "left right"
+                       "bottom bottom";
+  gap: 15px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &_left {
+      grid-area: left;
+    }
+
+    &_right {
+      grid-area: right;
+    }
+
+    &_bottom {
+      grid-area: bottom;
+    }
+  }
+}
+
+.block-info {
+  padding-top: 5px;
+  border-top: 1px solid #D1D1D1;
+
+  &__item {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 700;
+  }
+}
+
+.block-buttons {
+  padding-top: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__button {
+    &_dark {
+      background-color: var(--color-dark-blue);
+      color: var(--color-white-text);
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    padding: 30px 10px 70px;
+  }
+  .navigation__logo {
+    padding: 12px 0 20px 10px;
+  }
+  .form-configuration {
+    grid-template-areas: "left"
+                          "right"
+                          "bottom";
+
+  }
+  .block-info__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

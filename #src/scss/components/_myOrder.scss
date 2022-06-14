@@ -76,26 +76,23 @@
   }
 }
 
+.my-order__select {
+  width: 250px;
+
+  @include mini-mobile {
+    width: 100%;
+  }
+}
+
 .table {
   &-my-order {
-    @include mobile {
-      display: none;
-    }
-
-
+    width: 100%;
   }
 
   &__cell {
     &_border {
       border-right: 1px solid var(--color-table-dividers);
     }
-  }
-}
-
-.table-mobile-my-order {
-
-  @include mobile {
-    display: block;
   }
 }
 
@@ -156,5 +153,11 @@
 @media (max-width: 870px) {
   .block-filters__item_w-100 {
     width: 100%;
+  }
+  .table-my-order {
+    display: none;
+  }
+  .table-mobile-my-order {
+    display: block;
   }
 }

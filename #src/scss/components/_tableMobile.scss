@@ -13,11 +13,23 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
+    &_string {
+      @include mini-mobile {
+        flex-direction: row;
+
+      }
+
+    }
   }
 
   &__checkbox {
     padding-right: 5px;
     padding-left: 20px;
+
+    @include mini-mobile {
+      padding-left: 0;
+    }
   }
 
   &__string {
@@ -57,6 +69,14 @@
         padding: 0;
         border-left: none;
       }
+    }
+
+    &_w-13 {
+      @include mini-mobile {
+        margin-right: 13px;
+        width: 13px;
+      }
+
     }
   }
 

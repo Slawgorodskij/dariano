@@ -4,14 +4,19 @@
 @import "settings";
 
 @import "./components/header";
-@import "./components/login";
-@import "./components/myOrder";
-@import "./components/orderStatus";
-@import "./components/pageOrder";
+
 @import "./components/modal";
 @import "./components/accordionJS";
 @import "./components/form";
 @import "./components/table";
 @import "./components/tableMobile";
+@import "./components/select";
+
+@import "./components/login";
+@import "./components/myOrder";
+@import "./components/orderStatus";
+@import "./components/pageOrder";
 @import "./components/personalData";
+@import "./components/page404";
+@import "./components/pageConfigurator";
 
