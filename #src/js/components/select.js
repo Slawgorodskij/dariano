@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const itemContent = self.querySelectorAll('.select__item');
 
             self.classList.toggle('active');
-            header.classList.add('select__header_active')
+            header.classList.add('select__header_active');
+            // current.innerText = '';
+            current.classList.add('select__current_active');
 
             itemContent.forEach((elem) => {
                 elem.addEventListener('click', (event) => {

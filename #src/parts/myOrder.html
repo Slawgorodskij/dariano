@@ -2,16 +2,53 @@
 
     <div class="block-filters__item block-filters__item_w-100">
 
-        <div class="block-filters__date">
-            <div class="block-forms__border block-forms__border_date">
-                <p class="block-forms__name-elem">Дата</p>
-                <input class="block-forms__elem" type="text" name="date" placeholder="25.05.2022">
+        <div class="block-date">
+            <div class="block-filters__date block-date__input">
+                <div class="block-forms__border block-forms__border_date">
+                    <p class="block-forms__name-elem">Дата</p>
+                    <p class="block-forms__elem"> дд/мм/гг </p>
+                </div>
+                <span>-</span>
+                <div class="block-forms__border  block-forms__border_date">
+                    <p class="block-forms__name-elem">Дата</p>
+                    <p class="block-forms__elem"> дд/мм/гг </p>
+                </div>
             </div>
-            <span>-</span>
-            <div class="block-forms__border  block-forms__border_date">
-                <p class="block-forms__name-elem">Дата</p>
-                <input class="block-forms__elem" type="text" name="date" placeholder="25.05.2022">
+
+            <div class="block-date__calendar">
+
+                <div class="block-date__month">
+                    <svg class="block-date__icon block-date__previous" width="9" height="15" viewBox="0 0 9 15"
+                         fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7.20688 0.542969L8.62109 1.95718L2.8282 7.75008L8.62109 13.543L7.20688 14.9572L-0.000226889 7.75008L7.20688 0.542969Z"
+                              fill="#212121"/>
+                    </svg>
+                    <div>
+                        <span class="block-date__month-name"></span>
+                        <span class="block-date__year"></span>
+                    </div>
+                    <svg class="block-date__icon block-date__next" width="9" height="15" viewBox="0 0 9 15" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.41421 14.957L-6.18172e-08 13.5428L5.79289 7.74992L-5.68248e-07 1.95703L1.41421 0.542818L8.62132 7.74992L1.41421 14.957Z"
+                              fill="#212121"/>
+                    </svg>
+                </div>
+
+                <div class="block-date__week">
+                    <span class="block-date__week_item">Пн</span>
+                    <span class="block-date__week_item">Вт</span>
+                    <span class="block-date__week_item">Ср</span>
+                    <span class="block-date__week_item">Чт</span>
+                    <span class="block-date__week_item">Пт</span>
+                    <span class="block-date__week_item">Сб</span>
+                    <span class="block-date__week_item">Вс</span>
+                </div>
+                <div class="block-date__day">
+
+                </div>
             </div>
+
         </div>
 
         <div class="select my-order__select">

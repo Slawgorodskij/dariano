@@ -40,6 +40,10 @@
 
   &__current {
     color: var(--color-grey-text);
+
+    &_active {
+      color: var(--color-dark-text);
+    }
   }
 
   &__body {

@@ -1,6 +1,10 @@
 .table-order-status {
   cursor: auto;
 
+  &__string {
+    border-bottom: 1px solid var(--color-white);
+  }
+
   &__cell {
 
     &_text {

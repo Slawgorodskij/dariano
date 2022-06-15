@@ -52,6 +52,10 @@ textarea::placeholder {
       }
     }
 
+    &_date {
+      min-width: 125px;
+    }
+
     @include mini-mobile {
       flex-basis: 100%;
     }
@@ -80,6 +84,10 @@ textarea::placeholder {
     background-color: transparent;
     color: var(--color-grey-text);
     border: none;
+
+    &_active {
+      color: var(--color-dark-text);
+    }
   }
 }
 

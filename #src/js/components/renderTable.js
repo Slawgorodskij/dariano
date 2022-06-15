@@ -324,7 +324,6 @@ const renderTable = (list) => {
 
     if (document.querySelector('.table-mobile')) {
         for (let order of renderListMobile) {
-            // console.log('test')
             tableOrdersMobile.insertAdjacentHTML('beforeend', order);
         }
     }
